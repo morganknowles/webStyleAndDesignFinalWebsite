@@ -1,0 +1,40 @@
+/* Scss Document */
+%sprites{
+	background-image:url(../images/sprites.png);
+	height:20px;
+	width:20px;
+	margin: 0 5% 0 5%;
+}
+.social-container{
+	
+	display: none; 
+	
+	@include respond-to (small) {
+	 	display:flex;
+		justify-content:space-around;
+		width:20%;
+		float:right;
+		order:3;
+		margin-right:10%;
+	}
+}
+
+.twitter{
+	background-position: -114px -14px;
+	@extend %sprites;
+	}
+
+.facebook{
+	background-position: -316px -6px;
+	@extend %sprites;
+	}
+
+.instagram{
+	background-position: -270px -14px;
+	@extend %sprites;
+	}
+	
+.linkedIn{
+	background-position: -211px -12px;
+	@extend %sprites;
+	}

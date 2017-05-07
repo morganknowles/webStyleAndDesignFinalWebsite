@@ -1,0 +1,353 @@
+/* Scss Document */
+/* Scss Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* Scss Document */
+/* Scss Document */
+h1, h2, h3, h4 {
+  font-family: "Roboto Slab", serif;
+  transform: scale(0.943, 0.943);
+  font-weight: 700; }
+
+h1 {
+  color: #ffffff;
+  font-size: 45px;
+  text-shadow: 0px 11px 44px rgba(0, 0, 0, 0.3); }
+  @media only screen and (min-width: 400px) {
+    h1 {
+      font-size: 57px; } }
+
+h2 {
+  font-size: 25px;
+  color: #16a085; }
+
+h3 {
+  font-size: 40px; }
+
+h4 {
+  color: #ffffff;
+  font-size: 38px; }
+
+/* Scss Document */
+body {
+  font-family: helvetica, arial, sans-serif; }
+  @media only screen and (min-width: 1024px) {
+    body {
+      font-size: 150%; } }
+
+img {
+  height: auto;
+  max-width: 100%;
+  repeat: no-repeat; }
+
+.learn-more-button {
+  width: 245px;
+  height: 48px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: #16a085; }
+
+header {
+  font-size: .8em;
+  color: white;
+  background-repeat: no-repeat;
+  background-image: url(../images/Small/HeroBackground-min.jpg);
+  height: 500px;
+  background-size: cover; }
+  @media only screen and (min-width: 400px) {
+    header {
+      font-size: 1em; } }
+  @media only screen and (min-width: 1024px) {
+    header {
+      background-image: url(../images/Full/HeroBackground-min.jpg); } }
+  header .content {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    @media only screen and (min-width: 1024px) {
+      header .content {
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto; } }
+    header .content p {
+      padding: 10% 0 10% 0; }
+
+.phone img {
+  width: 100%; }
+.phone .content {
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  @media only screen and (min-width: 1024px) {
+    .phone .content {
+      width: 25%;
+      margin-left: auto;
+      margin-right: auto; } }
+  .phone .content p {
+    padding: 10% 0 10% 0; }
+@media only screen and (min-width: 400px) {
+  .phone {
+    display: flex; } }
+
+.code img {
+  margin: 0 10% 0 10%;
+  width: 80%; }
+.code .content {
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  @media only screen and (min-width: 1024px) {
+    .code .content {
+      width: 25%;
+      margin-left: auto;
+      margin-right: auto; } }
+  .code .content p {
+    padding: 10% 0 10% 0; }
+@media only screen and (min-width: 400px) {
+  .code {
+    display: flex;
+    flex-direction: row-reverse; } }
+
+.mountain {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/Small/MountainPhoto-min.jpg);
+  height: 700px; }
+  @media only screen and (min-width: 400px) {
+    .mountain {
+      background-image: url(../images/Full/MountainPhoto-min.jpg); } }
+  .mountain .content {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    @media only screen and (min-width: 1024px) {
+      .mountain .content {
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto; } }
+    .mountain .content p {
+      padding: 10% 0 10% 0; }
+
+.news {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url(../images/Small/CameraHold-min.jpg);
+  height: 500px; }
+  @media only screen and (min-width: 400px) {
+    .news {
+      background-image: url(../images/Full/CameraHold-min.jpg); } }
+  .news .content {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    @media only screen and (min-width: 1024px) {
+      .news .content {
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto; } }
+    .news .content p {
+      padding: 10% 0 10% 0; }
+  .news input {
+    margin: 10% 0 10% 0; }
+
+.action {
+  text-align: center;
+  color: #373737; }
+  .action .content {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    @media only screen and (min-width: 1024px) {
+      .action .content {
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto; } }
+    .action .content p {
+      padding: 10% 0 10% 0; }
+  .action button {
+    font-size: 18.298px;
+    color: #f5f6f7;
+    text-align: left;
+    font-weight: bold;
+    background-color: #1a7dbc; }
+
+/* Scss Document */
+footer {
+  text-align: center;
+  background-color: white; }
+  footer ul a {
+    text-decoration: none;
+    color: black; }
+  footer img {
+    float: right; }
+
+/* Scss Document */
+.twitter, .facebook, .instagram, .linkedIn {
+  background-image: url(../images/sprites.png);
+  height: 20px;
+  width: 20px;
+  margin: 0 5% 0 5%; }
+
+.social-container {
+  display: none; }
+  @media only screen and (min-width: 400px) {
+    .social-container {
+      display: flex;
+      justify-content: space-around;
+      width: 20%;
+      float: right;
+      order: 3;
+      margin-right: 10%; } }
+
+.twitter {
+  background-position: -114px -14px; }
+
+.facebook {
+  background-position: -316px -6px; }
+
+.instagram {
+  background-position: -270px -14px; }
+
+.linkedIn {
+  background-position: -211px -12px; }
+
+/* Scss Document */
+nav {
+  order: 2; }
+  nav li {
+    display: inline; }
+    nav li a {
+      list-style-type: none;
+      text-decoration: none; }
+
+.navlogo {
+  order: 1; }
+
+.topnav {
+  height: 2.4%;
+  background-color: #1a1b1c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px; }
+  .topnav li {
+    padding: 10px; }
+    .topnav li.selected:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #f00;
+      display: inline-block; }
+
+.drop {
+  text-decoration: none;
+  color: white; }
+  @media only screen and (min-width: 400px) {
+    .drop {
+      display: none; } }
+
+.drop li {
+  display: none; }
+
+.drop:hover {
+  display: block;
+  background-color: #1a1b1c;
+  padding: 100px; }
+  .drop:hover li {
+    display: block; }
+
+.larger-screen-menu {
+  display: none; }
+  @media only screen and (min-width: 400px) {
+    .larger-screen-menu {
+      display: block;
+      color: white; } }
+  .larger-screen-menu a:visited {
+    color: white; }
+
+.bottomnav ul {
+  display: none; }
+  @media only screen and (min-width: 400px) {
+    .bottomnav ul {
+      display: flex;
+      align-content: flex-start;
+      background-color: white;
+      color: black;
+      font-size: 16.97px;
+      font-weight: 700;
+      color: #373737;
+      transform: scale(0.943, 0.943); }
+      .bottomnav ul li {
+        margin: 0 2% 0 2%; }
+      .bottomnav ul p {
+        color: #16a085; } }
+
+	/**
+	.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	
+	border-top: 20px solid #f00;
+}*/
+
+/*# sourceMappingURL=style.css.map */

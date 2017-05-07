@@ -1,0 +1,52 @@
+.Facebook, .fa-check, .Instagram, .LinkedIn, .Shape_1_copy, .Twitter, .V, .WSD{
+	background: url(sprites.png) no-repeat;
+}
+
+.Facebook{
+	background-position: -316px -6px ;
+	width: 20px;
+	height: 20px;
+}
+
+.fa-check{
+	background-position: -368px -11px ;
+	width: 16px;
+	height: 12px;
+}
+
+.Instagram{
+	background-position: -270px -14px ;
+	width: 20px;
+	height: 20px;
+}
+
+.LinkedIn{
+	background-position: -211px -12px ;
+	width: 20px;
+	height: 20px;
+}
+
+.Shape_1_copy{
+	background-position: -174px -14px ;
+	width: 12px;
+	height: 17px;
+}
+
+.Twitter{
+	background-position: -114px -14px ;
+	width: 20px;
+	height: 17px;
+}
+
+.V{
+	background-position: -65px -20px ;
+	width: 13px;
+	height: 7px;
+}
+
+.WSD{
+	background-position: 0 0;
+	width: 40px;
+	height: 40px;
+}
+

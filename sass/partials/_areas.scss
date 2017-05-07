@@ -1,0 +1,119 @@
+/* Scss Document */
+
+
+body{
+	font-family:helvetica, arial, sans-serif;
+	@include respond-to("medium"){
+		font-size:150%;
+	}
+}
+
+
+img {
+	height: auto;
+	max-width: 100%;
+	repeat:no-repeat;
+	}
+
+
+.learn-more-button {
+	@include learn-more-button;
+	}
+
+
+header {
+	font-size:.8em;
+	color:white;
+	background-repeat:no-repeat;
+	background-image: url(../images/Small/HeroBackground-min.jpg);
+	height:500px;
+	background-size:cover;
+	@include respond-to(small){
+	font-size:1em;
+	}
+		@include respond-to("medium"){
+			background-image:url(../images/Full/HeroBackground-min.jpg);	
+		} 
+
+    .content{
+    	@include content-float;
+    }
+	
+}
+
+.phone{
+	img{
+		width:100%;
+	}
+	.content{
+		@include content-float;
+	}
+	@include respond-to("small"){
+		display:flex;
+	}
+}
+
+.code{
+	img{
+		margin: 0 10% 0 10%;
+		width:80%;
+	}
+	.content {
+		@include content-float;
+	}
+	@include respond-to("small"){
+		display:flex;
+		flex-direction:row-reverse;
+	}	
+}
+
+.mountain{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-image: url(../images/Small/MountainPhoto-min.jpg);
+	@include respond-to (small){
+	background-image:url(../images/Full/MountainPhoto-min.jpg);
+	}
+	height:700px;
+	.content{
+		@include content-float;
+	}
+} 
+
+.news{
+	text-align:center;
+	color:white;
+	display:flex;
+	flex-direction:column;
+	background-size:cover;
+	background-image: url(../images/Small/CameraHold-min.jpg);
+	@include respond-to (small){
+	background-image:url(../images/Full/CameraHold-min.jpg);
+	}
+	height:500px;
+
+	.content{
+			@include content-float;
+		}
+	input{
+		margin:10% 0 10% 0;
+	}
+
+}
+
+.action{
+	text-align:center;
+	color: #373737;
+	.content{
+		@include content-float;
+		}
+	button{
+		font-size: 18.298px;
+		color:#f5f6f7;
+		text-align: left;
+		font-weight: bold;
+		background-color:#1a7dbc;
+	
+	}
+}
+

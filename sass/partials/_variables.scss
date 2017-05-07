@@ -1,0 +1,49 @@
+/* Scss Document */
+
+$brand-color: #16a085;
+$heading-font:'Roboto Slab', serif;
+$heading-weight:700;
+$break-small: 400px;
+$break-medium: 1024px;
+
+
+@mixin learn-more-button{
+	width: 245px;
+	height: 48px;
+	border:none;
+	border-radius:25px;
+	color:white;
+	background-color:$brand-color;
+	}
+
+@mixin respond-to($media) {
+
+@if $media == "small" {
+		@media only screen and (min-width: $break-small) { @content; }
+		}
+@else if $media == "medium" {
+		@media only screen and (min-width: $break-medium) { @content; }
+		}
+	}
+
+@mixin content-float{
+	padding:10%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+		@include respond-to("medium"){
+		width:25%;
+		margin-left:auto;
+		margin-right:auto;
+		}
+			p{
+			padding:10% 0 10% 0;
+			}
+}
+
+
+%hidden {
+	display: none;
+	visibility: hidden;
+}

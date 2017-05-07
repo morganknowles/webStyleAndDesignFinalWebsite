@@ -1,0 +1,35 @@
+/* Scss Document */
+
+ %headings{
+	 font-family:$heading-font;
+	 transform: scale(0.943,0.943);
+	 font-weight: $heading-weight;
+	 }
+
+h1{
+	@extend %headings;
+	color: #ffffff;
+	font-size: 45px;
+	text-shadow: 0px 11px 44px rgba(0, 0, 0, 0.3);
+	@include respond-to(small){
+		font-size:57px;
+	}
+}
+
+
+h2{
+	@extend %headings;
+	font-size: 25px;
+	color:$brand-color;
+	}
+
+h3{
+	@extend %headings;
+	font-size: 40px;
+	}
+
+h4{
+	@extend %headings;
+	color: #ffffff;
+	font-size: 38px;
+	}
